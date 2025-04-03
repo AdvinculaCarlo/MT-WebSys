@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Advincula - MidtermExam - WebSys</title>
+ </head>
+ <body>
+     <style>
+     </style>
+     <button id="lightBtn">Light Theme</button>
+     <button id="darkBtn">Dark Theme</button>
+ 
+     <script>
+         let lightButton = document.getElementById("lightBtn");
+         let darkButton = document.getElementById("darkBtn");
+         let body = document.body;
+ 
+         lightButton.addEventListener("click", function() {
+            body.style.backgroundColor = "white";
+            body.style.color = "black";
+            lightButton.style.color = "black";
+            lightButton.style.backgroundColor = "white";
+         });
+ 
+         darkButton.addEventListener("click", function() {
+            body.style.backgroundColor = "black";
+            body.style.color = "white";
+            darkButton.style.color = "white";
+            darkButton.style.backgroundColor = "black";
+         });
+     </script>
+ 
+ </body>
+ </html>
